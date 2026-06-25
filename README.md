@@ -21,9 +21,9 @@
    - **SSID**：无线填校园网 SSID，有线可留空
    - **贡献者**：你的 GitHub 用户名（多个用逗号或空格分隔）
    - **学校 ID / 学校名称 / 描述**
-5. 点「复制 JSON」或「下载 JSON」，把生成的预设条目粘贴到 smart-srun 的 PR 或 Issue。
+5. 点「复制 JSON」或「下载 JSON」，再点「提交 Issue」按钮，把生成的预设条目粘贴到 smart-srun 的 Issue 里即可。
 
-> 不熟悉 GitHub PR 流程也没关系，直接开一个 Issue 贴上 JSON 即可。
+> 提交很简单：开一个 Issue 贴上 JSON 就行，不需要懂 GitHub 的 PR 流程。
 
 ## 一次抓全所有运营商（抓一个补一个）
 

@@ -1326,11 +1326,10 @@
         '<button type="button" id="ssp-download" style="' + buttonStyle(false) + ' flex:1;">下载 JSON</button>' +
         '</div>' +
         '<div style="margin-top:10px;padding:8px;border:1px solid #313244;border-radius:6px;background:#181825;color:#a6adc8;font-size:11px;line-height:1.5;">' +
-        '请确认学校 ID、学校名称、接入方式（无线/有线）、SSID、贡献者和描述后，再把 JSON 粘贴到 PR 或 Issue。SSID 与接入方式脚本无法自动探测，需要你手动填写：无线请填校园网 SSID，有线选“有线（WAN）”可不填 SSID。贡献者填你的 GitHub 用户名（如 @yourname），方便署名。PR 适合直接提交预设；不熟悉 GitHub 流程时可以先发 Issue。' +
+        '请确认学校 ID、学校名称、接入方式（无线/有线）、SSID、贡献者和描述后，点下方按钮提交 Issue 并粘贴上面的 JSON 即可。SSID 与接入方式脚本无法自动探测，需要你手动填写：无线请填校园网 SSID，有线选“有线（WAN）”可不填 SSID。贡献者填你的 GitHub 用户名（如 @yourname），方便署名。' +
         '</div>' +
         '<div style="display:flex;gap:6px;margin-top:8px;">' +
-        '<a href="https://github.com/matthewlu070111/smart-srun/pulls" target="_blank" style="' + linkButtonStyle(true) + '">提交 PR</a>' +
-        '<a href="https://github.com/matthewlu070111/smart-srun/issues/new/choose" target="_blank" style="' + linkButtonStyle(false) + '">提交 Issue</a>' +
+        '<a href="https://github.com/matthewlu070111/smart-srun/issues/new/choose" target="_blank" style="' + linkButtonStyle(true) + '">提交 Issue</a>' +
         '</div>' +
         '</div>';
     }
