@@ -1,4 +1,5 @@
 # Smart SRun School Preset Capture
+![]( https://r2.guiguisocute.cloud/PicGo/2026/06/26/34b52ae47a29b4158a20e56f361f0c18.png)
 
 一个 Tampermonkey（油猴）用户脚本，用来**采集一次真实的深澜 SRun 校园网网页登录**，并自动生成可直接提交给 [smart-srun](https://github.com/matthewlu070111/smart-srun) 的 `school-presets.json` 预设条目。
 
