@@ -1,45 +1,13 @@
-# Smart SRun School Preset Capture
-![]( https://r2.guiguisocute.cloud/PicGo/2026/06/26/34b52ae47a29b4158a20e56f361f0c18.png)
+# Smart SRun School Preset Capture（已归档）
 
-一个 Tampermonkey（油猴）用户脚本，用来**采集一次真实的深澜 SRun 校园网网页登录**，并自动生成可直接提交给 [smart-srun](https://github.com/matthewlu070111/smart-srun) 的 `school-presets.json` 预设条目。
+本项目已停止维护。校园认证参数探测与预设贡献入口已迁入智慧深澜插件，当前使用流程无需安装油猴脚本。
 
-适用于：浏览器网页登录可用，但你不确定认证地址、`AC_ID`、运营商后缀或高级登录参数，想帮自己学校做一份一键预设的场景。
+1. 安装智慧深澜插件，打开一键配置。
+2. 选择接入线路，读取认证地址与账号类型后缀。
+3. 保存账号后预览预设草稿，通过 GitHub Issue 提交学校参数与验证结果。
 
-## 安装
+[一键配置指南](https://smartsrun-doc.pages.dev/guide/setup-wizard) · [贡献学校预设](https://smartsrun-doc.pages.dev/contribute/presets) · [插件仓库](https://github.com/matthewlu070111/smart-srun)
 
-1. 浏览器装好 [Tampermonkey](https://www.tampermonkey.net/)。
-2. 点击安装脚本：
-   [smart_srun_school_preset_capture.user.js](https://raw.githubusercontent.com/guiguisocute/smart_srun_school_preset_capture.user/main/smart_srun_school_preset_capture.user.js)
-   （Tampermonkey 会弹出安装确认页）
+对于插件尚不能解析的动态认证页面，请按 [故障排查指南](https://smartsrun-doc.pages.dev/guide/troubleshooting) 提供脱敏信息。
 
-## 使用
-
-1. 连上校园网，打开学校的 SRun 认证页（portal）。
-2. 在网页登录框里正常输入账号、密码并登录。
-3. 页面右侧会出现采集面板，自动显示这次登录抓到的字段：学工号、运营商后缀、认证地址、`AC_ID`、登录形态等。
-4. 登录成功后点击「提交信息，协助开发者」，补全脚本无法自动探测的字段：
-   - **接入方式**：无线 / 有线（WAN）
-   - **SSID**：无线填校园网 SSID，有线可留空
-   - **贡献者**：你的 GitHub 用户名（多个用逗号或空格分隔）
-   - **学校 ID / 学校名称 / 描述**
-5. 点「复制 JSON」或「下载 JSON」，再点「提交 Issue」按钮，把生成的预设条目粘贴到 smart-srun 的 Issue 里即可。
-
-> 提交很简单：开一个 Issue 贴上 JSON 就行，不需要懂 GitHub 的 PR 流程。
-
-## 一次抓全所有运营商（抓一个补一个）
-
-运营商后缀在登录请求里就能抓到，**即使这次登录失败也会被记录**。所以你可以用不同运营商的账号多登录几次，脚本会按「抓一个补一个」把抓到的运营商后缀逐个累积进 `operators`，导出的预设更完整。面板会显示「已抓取哪些运营商后缀」。
-
-脚本**不会**预设某学校一定有移动/电信/联通三大运营商，只导出真正抓到过的；运营商后缀统一写在 `operators[].suffix`（空字符串表示纯校园网账号）。
-
-## 隐私
-
-脚本只记录真实请求里出现的字段，**不会导出明文账号、密码、challenge 或加密 `info` 原文**；用户名只保留后缀和打码后的形式。
-
-## 相关项目
-
-- 主项目：[smart-srun](https://github.com/matthewlu070111/smart-srun) —— OpenWrt 上的深澜/SRun 校园网自动认证 LuCI 插件。
-
-## 许可
-
-跟随 smart-srun 主项目的许可协议。
+仓库以公开只读形式保留历史代码；[旧版使用说明](https://github.com/guiguisocute/smart_srun_school_preset_capture.user/blob/1315d82e6b0df2df8c820c89d10e1765f5840c0d/README.md) 仅供历史参考。
